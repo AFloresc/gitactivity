@@ -28,6 +28,7 @@ func TestIt(t *testing.T) {
 		return
 	}
 
+	fmt.Printf("- There are %d repositories \n", len(result))
 	mapRepos := createReposMap(result)
 	for key, repo := range mapRepos {
 		pushCounter := 0

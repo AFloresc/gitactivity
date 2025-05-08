@@ -41,6 +41,7 @@ func main() {
 	}
 
 	mapRepos := createReposMap(result)
+	fmt.Printf("- There are %d repositories \n", len(result))
 	for key, repo := range mapRepos {
 		pushCounter := 0
 		pullCounter := 0
